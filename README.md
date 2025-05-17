@@ -86,3 +86,4 @@ go run server/main.go
 ---
 ## Note
 - Reports are stored in memory and refreshed automatically by a cron job every 10 seconds for users user1, user2, and user3.
+- The answer to the scaling design is provided in design.md.
