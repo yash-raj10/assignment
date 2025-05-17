@@ -11,7 +11,7 @@ We'll deploy multiple instances of our gRPC service using Kubernetes. This allow
 #### 2. Use Sharded, Persistent Storage
 
 * Replace in-memory map with a persistent, horizontally scalable database: PostgreSQL or Redis for fast and distributed interaction.
-
+* Use sharding to distribute write load and improve performance.
 * Add Redis for caching recent/frequent reports.
 
 #### 3. gRPC Load Balancing
