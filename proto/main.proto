@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package assignment;
+
+option go_package = "./pb";
+
+import "google/protobuf/empty.proto";
+
+service AssignmentService {
+    rpc GetHealth(google.protobuf.Empty) returns (HealthResponse);
+    rpc GenerateReport(UserRequest) returns (ReportResponse);
+}
+
+message UserRequest {
+  string user_id = 1;
+}
+
+message ReportResponse {
+  string user_id = 1;
+  string report_id = 2; 
+  string created_at = 3;
+}
+
+message HealthResponse {
+    string status = 1;
+}
+
